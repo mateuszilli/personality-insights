@@ -1,18 +1,3 @@
-<h1 align="center" style="border-bottom: none;">🚀 Personality Insights Sample Application</h1>
-<h3 align="center">This Node.js app demonstrates how to analyze text and tweets using Personality Insights.</h3>
-<p align="center">
-  <a href="http://travis-ci.org/watson-developer-cloud/personality-insights-nodejs">
-    <img alt="Travis" src="https://travis-ci.org/watson-developer-cloud/personality-insights-nodejs.svg?branch=master">
-  </a>
-  <a href="#badge">
-    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
-  </a>
-</p>
-</p>
-
-The IBM Watson [Personality Insights][service_url] service uses linguistic analysis to extract cognitive and social characteristics from input text such as email, text messages, tweets, forum posts, and more. By deriving cognitive and social preferences, the service helps users to understand, connect to, and communicate with other people on a more personalized level.
-
-
 ## Prerequisites
 
 1. Sign up for an [IBM Cloud account](https://cloud.ibm.com/registration/).
@@ -43,7 +28,7 @@ The IBM Watson [Personality Insights][service_url] service uses linguistic analy
     ```
 ### Setting Up the Twitter Application
 
-1. [Create a Twitter application][create_twitter_app].
+1. [Create a Twitter application](https://apps.twitter.com/app/new).
 
 2. Add your application's callback URL:
   - For Bluemix environment: `<application-name>.mybluemix.net/auth/twitter/callback`
@@ -71,32 +56,6 @@ The IBM Watson [Personality Insights][service_url] service uses linguistic analy
     ```
 
 1. View the application in a browser at `localhost:3000`
-
-## Deploying to IBM Cloud as a Cloud Foundry Application
-
-1. Login to IBM Cloud with the [IBM Cloud CLI](https://cloud.ibm.com/docs/cli/index.html#overview)
-
-    ```
-    ibmcloud login
-    ```
-
-1. Target a Cloud Foundry organization and space.
-
-    ```
-    ibmcloud target --cf
-    ```
-
-1. Edit the *manifest.yml* file. Change the **name** field to something unique.  
-  For example, `- name: my-app-name`.
-1. Deploy the application
-
-    ```
-    ibmcloud app push
-    ```
-
-1. View the application online at the app URL.  
-For example: https://my-app-name.mybluemix.net
-
 
 ## Directory structure
 
@@ -134,15 +93,3 @@ For example: https://my-app-name.mybluemix.net
 
 This sample code is licensed under Apache 2.0.  
 Full license text is available in [LICENSE](LICENSE).
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md).
-
-## Open Source @ IBM
-
-Find more open source projects on the
-[IBM Github Page](http://ibm.github.io/).
-
-[service_url]: https://www.ibm.com/watson/services/personality-insights/
-[create_twitter_app]: https://apps.twitter.com/app/new
